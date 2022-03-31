@@ -118,5 +118,19 @@ namespace user.web.Tests
             result.StatusCode.Should().Be((int)HttpStatusCode.OK);
         }
         #endregion
+
+        #region UpdateKey
+        [Fact]
+
+        public void UpdateKeys_withData()
+        {
+            bool responseObj = true;
+            A.CallTo(() => _userService.UpdateKeys(A<int>.Ignored,A<string>.Ignored,A<string>.Ignored,A<string>.Ignored)).Returns(responseObj);
+            var response = _userController.UpdateKeys(Id,Name,Username,Email).Result;
+            var result = response as OkObjectResult;
+            result.StatusCode.Should().Be((int)HttpStatusCode.OK);
+        }
+        #endregion
+
     }
 }

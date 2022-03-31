@@ -131,5 +131,27 @@ namespace user.web.Service.Tests
             response.Should().Be(responseObj);
         }
         #endregion
+
+        #region UpdateKeys
+        [Fact]
+
+        public async void UpdateKeys_WithContent()
+        {
+            bool responseObj = true;
+            A.CallTo(() => _userRepository.UpdateKeys(A<int>.Ignored, A<string>.Ignored, A<string>.Ignored, A<string>.Ignored)).Returns(responseObj);
+            var response = await _userService.UpdateKeys(Id,Name,Username,Email);
+            response.Should().Be(responseObj);
+        }
+
+        [Fact]
+
+        public async void UpdateKeys_WithNoContent()
+        {
+            bool responseObj = false;
+            A.CallTo(() => _userRepository.UpdateKeys(A<int>.Ignored, A<string>.Ignored, A<string>.Ignored, A<string>.Ignored)).Returns(responseObj);
+            var response = await _userService.UpdateKeys(Id,Name,Username,Email);
+            response.Should().Be(responseObj);
+        }
+        #endregion
     }
 }
