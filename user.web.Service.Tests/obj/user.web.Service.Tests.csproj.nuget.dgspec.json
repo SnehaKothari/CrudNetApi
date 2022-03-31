@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.web.Service.Tests\\user.web.Service.Tests.csproj": {}
+    "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.Web.Service.Tests\\user.Web.Service.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\CrudApplication\\user.Web.csproj": {
@@ -173,14 +173,14 @@
         }
       }
     },
-    "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.web.Service.Tests\\user.web.Service.Tests.csproj": {
+    "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.Web.Service.Tests\\user.Web.Service.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.web.Service.Tests\\user.web.Service.Tests.csproj",
-        "projectName": "user.web.Service.Tests",
-        "projectPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.web.Service.Tests\\user.web.Service.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.Web.Service.Tests\\user.Web.Service.Tests.csproj",
+        "projectName": "user.Web.Service.Tests",
+        "projectPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.Web.Service.Tests\\user.Web.Service.Tests.csproj",
         "packagesPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.web.Service.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\user.Web.Service.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -197,9 +197,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\CrudApplication\\user.Web.csproj": {
-                "projectPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\CrudApplication\\user.Web.csproj"
-              },
               "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\TestData\\TestData.csproj": {
                 "projectPath": "C:\\Users\\Sneha Kothari.LAPTOP-VNEC8O7K\\OneDrive\\Desktop\\Augmento\\CrudApplication\\TestData\\TestData.csproj"
               }
@@ -216,6 +213,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            },
             "FakeItEasy": {
               "target": "Package",
               "version": "[7.3.1, )"
@@ -224,29 +225,37 @@
               "target": "Package",
               "version": "[6.5.1, )"
             },
-            "FsCheck.Xunit": {
+            "Microsoft.AspNetCore.Http": {
               "target": "Package",
-              "version": "[2.16.4, )"
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.9.1, )"
+              "version": "[16.9.4, )"
             },
-            "NUnit": {
+            "Moq": {
               "target": "Package",
-              "version": "[3.13.1, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[3.17.0, )"
+              "version": "[4.17.2, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.0.2, )"
             },
             "xunit": {
               "target": "Package",
               "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

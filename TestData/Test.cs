@@ -26,12 +26,12 @@ namespace TestData
                     Email="anju@gmail.com"
                 }
             };
-           return await Task.FromResult<IList<Users>>(data);
+            return await Task.FromResult<IList<Users>>(data);
         }
 
         public static async Task<IEnumerable<Users>> GetAllKeys_NoContent()
         {
-            List<Users> data = new List<Users> {};
+            List<Users> data = new List<Users> { };
             return await Task.FromResult<IList<Users>>(data);
         }
 
@@ -46,7 +46,7 @@ namespace TestData
                     Username="sneha",
                     Email="kothari.sneha05@gmail.com"
                 }
-              
+
             };
             return await Task.FromResult<IList<Users>>(data);
         }
